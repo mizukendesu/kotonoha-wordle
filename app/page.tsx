@@ -1,5 +1,10 @@
-import { redirect } from "next/navigation";
+import WordleGame from "@/components/wordle/WordleGame";
+import { DiscordActivityWrapper } from "@/components/discord/DiscordActivityWrapper";
 
 export default function Home() {
-  redirect("/wordle");
+  return (
+    <DiscordActivityWrapper>
+      <WordleGame />
+    </DiscordActivityWrapper>
+  );
 }

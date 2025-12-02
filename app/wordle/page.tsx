@@ -1,4 +1,5 @@
 import WordleGame from "@/components/wordle/WordleGame";
+import { DiscordActivityWrapper } from "@/components/discord/DiscordActivityWrapper";
 
 export const metadata = {
   title: "kotonoha wordle - 日本語版 Wordle",
@@ -6,6 +7,9 @@ export const metadata = {
 };
 
 export default function WordlePage() {
-  return <WordleGame />;
+  return (
+    <DiscordActivityWrapper>
+      <WordleGame />
+    </DiscordActivityWrapper>
+  );
 }
-

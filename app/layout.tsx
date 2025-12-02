@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "kotonoha wordle",
   description: "日本語版 Wordle - ひらがな5文字の単語を当てるゲーム",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
